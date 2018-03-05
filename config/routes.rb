@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :events
+  resources :notices
+  resources :service_requests
   resources :properties
   devise_for :users
   root to: "home#index"
